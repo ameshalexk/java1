@@ -1,4 +1,4 @@
-//var students = [];
+var students = [];
 
 function Student(first,last,age) {
     this.firstName = first;
