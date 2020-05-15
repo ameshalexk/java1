@@ -163,23 +163,41 @@
 // console.log(dad);
 
 
-function descendingOrder(n){
-    let sorted = (""+n).split("");
+// function descendingOrder(n){
+//     let sorted = [];
+//     sorted = n.sort
 
-    let bob = sorted.sort ( (a,b) => {
-        if (a<b) return 1;
-        else if (b<a) return -1;
-        else return 0;
-    }  );
+//     let sorted = n.sort();
 
-    let semifinal = bob.join('');
-    let final = parseInt(semifinal);
-    return console.log(final);
+//     console.log(sorted);
 
-  }
+//   }
 
-  descendingOrder(0);
-  descendingOrder(1);
-  descendingOrder(123456789);
-  descendingOrder(145263);
-  descendingOrder(21445);
+
+//   descendingOrder(123456789);
+
+
+
+
+def row_sum_odd_numbers(n):
+    matrix = [[0 for x in range(n)] for y in range(n)]
+    index = 1
+    for i in range(0, n+1):
+        for j in range(0, i):
+            matrix[i-1][j] = index
+            index += 2
+    return sum(matrix[n-1])
+
+
+
+print(row_sum_odd_numbers(2))   # => 8
+print(row_sum_odd_numbers(41))  # => 68921
+
+
+# BEST PRACTICE!
+def best_practice(n):
+    return n**3
+
+
+    row_sum_odd_numbers(1); # 1
+    row_sum_odd_numbers(2); # 3 + 5 = 8
