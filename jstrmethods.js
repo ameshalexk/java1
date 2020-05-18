@@ -176,28 +176,61 @@
 
 //   descendingOrder(123456789);
 
+// function x (a){
+//   console.log("1");
+//   a();
+//   console.log("2");
+//   return function(a);
+// }
+
+// function y(){
+// console.log('3');
+// }
+
+// let e = x(y);
+// e();
+// b();
+
+// let english = function greet(msg) {
+//   return function(name) {
+//     console.log(msg, name);
+//   }
+// }
+
+// // let english = greet("hi");
+// english("hi")('tom');
+
+// let timmy = setTimeout (log, 100, "Hello", 12, true);
+
+// clearTimeout(timmy);
+
+// function log (msg,ssss) {
+
+//   console.log("message", msg,ssss) ;
+//   clearInterval(tommy);
+
+// }
 
 
+// let tommy = setInterval(log, 5000, 'goodbye', 's');
 
-def row_sum_odd_numbers(n):
-    matrix = [[0 for x in range(n)] for y in range(n)]
-    index = 1
-    for i in range(0, n+1):
-        for j in range(0, i):
-            matrix[i-1][j] = index
-            index += 2
-    return sum(matrix[n-1])
+// function dos() {
+// return "d";
+// }
 
+// var lol = function () {
+//   return "s";
+// }
 
+// console.log(lol);
 
-print(row_sum_odd_numbers(2))   # => 8
-print(row_sum_odd_numbers(41))  # => 68921
-
-
-# BEST PRACTICE!
-def best_practice(n):
-    return n**3
+let lol = function () {
+  console.log('hi');
+}
 
 
-    row_sum_odd_numbers(1); # 1
-    row_sum_odd_numbers(2); # 3 + 5 = 8
+setTimeout(lol,1000);
+setTimeout(lol,2000);
+setTimeout(lol,3000);
+setTimeout(lol,4000);
+setTimeout(lol,5000);
