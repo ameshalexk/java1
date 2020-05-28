@@ -226,13 +226,7 @@
 
 // let obj = new otherProto();
 // console.log(obj.__proto__.__proto__.__proto__);
-// "use strict";
 
-let names = [1,2,4];
-
-for ( p of names) {
-    console.log(p);
-}
 // let lol = function () {
 //   console.log('hi');
 // }
@@ -255,18 +249,25 @@ for ( p of names) {
 // }
 
 // console.log('end');
-let bob = function(num, str) {
-    console.log('bob', num, str, this);
-    // return true;
-}
-let bill = {
-    name: 'bill murray',
-    movie: 'lost in Translaton',
-    myMethod: function(fn) {
-        let n = arguments[1];
-        let s = arguments[2];
-        fn.apply(bill, [n,s]);
-    }
-}
-bill.myMethod(bob,4,'ciao');
+// let bob = function(num, str) {
+//     console.log('bob', num, str, this);
+//     // return true;
+// }
+// let bill = {
+//     name: 'bill murray',
+//     movie: 'lost in Translaton',
+//     myMethod: function(fn) {
+//         let n = arguments[1];
+//         let s = arguments[2];
+//         fn.apply(bill, [n,s]);
+//     }
+// }
+// bill.myMethod(bob,4,'ciao');
 
+// "use strict";
+
+// let names = [1,2,4];
+
+// for ( p of names) {
+//     console.log(p);
+// }
