@@ -183,7 +183,6 @@
 // Array findIndex
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
 
-<<<<<<< HEAD
 
 // let cities = ["Ankara", "Istanbul", "Antalya", "Bursa", "Trabzon"];
 // let city = "Bursa";
@@ -234,7 +233,6 @@ let names = [1,2,4];
 for ( p of names) {
     console.log(p);
 }
-=======
 // let lol = function () {
 //   console.log('hi');
 // }
@@ -271,4 +269,4 @@ let bill = {
     }
 }
 bill.myMethod(bob,4,'ciao');
->>>>>>> 26feaca7252246c547fbd0c55af09b899435e32b
+
