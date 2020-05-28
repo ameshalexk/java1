@@ -183,6 +183,7 @@
 // Array findIndex
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
 
+<<<<<<< HEAD
 
 // let cities = ["Ankara", "Istanbul", "Antalya", "Bursa", "Trabzon"];
 // let city = "Bursa";
@@ -233,3 +234,41 @@ let names = [1,2,4];
 for ( p of names) {
     console.log(p);
 }
+=======
+// let lol = function () {
+//   console.log('hi');
+// }
+
+
+// setTimeout(lol,1000);
+// setTimeout(lol,2000);
+// setTimeout(lol,3000);
+// setTimeout(lol,4000);
+// setTimeout(lol,5000);
+
+// try {
+//   let url = "http://jsonplaceholder.typicode.com";
+//   console.log((url).then((response) => {}));
+//   console.log('hello');
+// }catch(err) {
+//   console.log('caught', err.name, err.message);
+// }finally{
+//   console.log('Took you a long time');
+// }
+
+// console.log('end');
+let bob = function(num, str) {
+    console.log('bob', num, str, this);
+    // return true;
+}
+let bill = {
+    name: 'bill murray',
+    movie: 'lost in Translaton',
+    myMethod: function(fn) {
+        let n = arguments[1];
+        let s = arguments[2];
+        fn.apply(bill, [n,s]);
+    }
+}
+bill.myMethod(bob,4,'ciao');
+>>>>>>> 26feaca7252246c547fbd0c55af09b899435e32b
